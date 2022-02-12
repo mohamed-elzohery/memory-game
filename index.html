@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="Discription" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="Memory.css">
+</head>
+
+<body>
+    <div class="info-container">
+        <div class="name">Name: <span></span></div>
+        <div class="tries" id="tries">Moves: <span>0</span></div>
+        <div id="restart" class="restart"><img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/restart-1587630-1346233.png" alt="" />
+
+            <div class="insider">
+                <img id="pause" src="memory/p01.png" />
+                <img class="displayImage" id="resume" src="memory/r05.png" />
+            </div>
+
+        </div>
+        <div id="timer" class="timer">00:00</div>
+
+    </div>
+    <div class="splash-screen">
+        <span>Start Game</span>
+    </div>
+    <div class="memory-game-blocks">
+        <div class="memory-game-block" data-type="Bird">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m01.png" /></div>
+        </div>
+        <div class="memory-game-block" data-type="Bird">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m01.png" /></div>
+        </div>
+
+        <div class="memory-game-block" data-type="Dog">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m02.jpg" /></div>
+        </div>
+        <div class="memory-game-block" data-type="Dog">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m02.jpg" /></div>
+        </div>
+
+        <div class="memory-game-block" data-type="Help">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m03.jpg" /></div>
+        </div>
+        <div class="memory-game-block" data-type="Help">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m03.jpg" /></div>
+        </div>
+
+        <div class="memory-game-block" data-type="Phones">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m04.png" /></div>
+        </div>
+        <div class="memory-game-block" data-type="Phones">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m04.png" /></div>
+        </div>
+
+        <div class="memory-game-block" data-type="Mask">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m05.png" /></div>
+        </div>
+        <div class="memory-game-block" data-type="Mask">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m05.png" /></div>
+        </div>
+
+        <div class="memory-game-block" data-type="Parrot">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m06.jpg" /></div>
+        </div>
+        <div class="memory-game-block" data-type="Parrot">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m06.jpg" /></div>
+        </div>
+
+        <div class="memory-game-block" data-type="Build">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m07.jpg" /></div>
+        </div>
+        <div class="memory-game-block" data-type="Build">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m07.jpg" /></div>
+        </div>
+
+        <div class="memory-game-block" data-type="Cake">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m08.jpg" /></div>
+        </div>
+        <div class="memory-game-block" data-type="Cake">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m08.jpg" /></div>
+        </div>
+
+        <div class="memory-game-block" data-type="Lady">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/09.jpg" /></div>
+        </div>
+        <div class="memory-game-block" data-type="Lady">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/09.jpg" /></div>
+        </div>
+
+        <div class="memory-game-block" data-type="Mango">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m10.jpg" /></div>
+        </div>
+        <div class="memory-game-block" data-type="Mango">
+            <div class="face front"><img alt="" src="memory/cover.png" /></div>
+            <div class="face back"><img alt="" src="memory/m10.jpg" /></div>
+
+        </div>
+    </div>
+    <div class="score-floor" id="score-floor">
+        <div class="score-result" id="score-result">
+            <span id="exit"><img src ="memory/e01.png" /></span>
+            <img src="memory/c01.png" alt="Cup">
+            <p class="winner">We Have <span>A Winner</span></p>
+            <p class="score" id="score">Your score <span class="score-number" id="score-number"></span></p>
+            <span class="play-again" id="play-again">Play Again <img src=""  alt="" /></span>
+        </div>
+    </div>
+    <audio id="success" src="memory/s05.mp3" preload="auto"></audio>
+    <audio id="wrong" src="memory/soundFail.mp3" preload="auto"></audio>
+    <audio id="winner" src="memory/s06.wav" preload="auto"></audio>
+
+    <script type="text/javascript" src="Memory.js">
+    </script>
+
+
+</body>
+
+</html>
